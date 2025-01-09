@@ -19,19 +19,19 @@ class Config(object):
 
     DUMP_ID = int(os.environ.get("DUMP_ID", 0))
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    BOT_TOKEN = os.environ.get("7824090160:AAGZ17TUz4pPvl-YIRA2HLwHxlXdf4JYiHk", "")
 
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = int(os.environ.get("28810170", 12345))
+    API_HASH = os.environ.get("d8fa6697eb16406d15015179aa641fee")
 
     # Authorized User IDS
     AUTH_USERS = [int(id) for id in os.environ.get(
-        "AUTH_USERS", "").split()] if os.environ.get("AUTH_USERS", None) else None
+        "AUTH_USERS", "5560200410 6754286457 7152043516 7189721382 7012709838").split()] if os.environ.get("AUTH_USERS", None) else None
 
-    OWNER_ID = int(os.environ.get('OWNER_ID'))
+    OWNER_ID = int(os.environ.get('5560200410'))
 
     # MongoDB
-    DATABASE_URL = os.environ.get("DATABASE_URL")
+    DATABASE_URL = os.environ.get("mongodb+srv://muktarhussainff5:3ChQSSJmaCri2LLi@cluster0.pykyf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
     # chunk size that should be used with requests
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
